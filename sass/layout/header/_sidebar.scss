@@ -1,0 +1,147 @@
+header {
+  width: auto;
+  #sidebar {
+    max-width: 70px;
+    padding: 0 20px;
+    transition: max-width 0.2s;
+
+    .logo-closed {
+      height: 50px;
+      align-items: center;
+      width: 100%;
+      overflow: hidden;
+
+      position: relative;
+
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+
+      .logo-label-colored {
+        font-weight: 500;
+        font-style: italic;
+        position: absolute;
+        white-space: nowrap;
+        left: 35px;
+        width: 100%;
+        .green {
+          color: $green;
+        }
+        .orange {
+          color: orange;
+        }
+      }
+    }
+    .search {
+      width: 100%;
+
+      form {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+        height: 20px;
+
+        i.fa-search{
+            margin-left: 4px;
+        }
+
+        input {
+          position: absolute;
+          left: 25px;
+          top: 0;
+          bottom: 0;
+          height: 100%;
+          font-size: 12px;
+          border: 0;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    ul {
+      li {
+        a {
+          display: flex;
+          flex-direction: row;
+          text-align: left;
+          align-items: center;
+          color: #747474;
+          font-family: $regular-font;
+          font-size: 14px;
+          font-weight: $light-weightfont;
+          align-items: center;
+        }
+      }
+
+      ul {
+        a {
+          padding: 10px;
+        }
+      }
+    }
+    &.menu-wrapper {
+      height: 100vh;
+
+      .level-one {
+        height: 100%;
+        padding: 0px;
+        width: 100%;
+        overflow: hidden;
+        background: $white;
+
+        img {
+          height: 20px;
+          width: 20px;
+          object-fit: contain;
+        }
+      }
+      li {
+        list-style: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #eee;
+      }
+      a {
+        &.logo-link {
+          display: inline-block;
+          margin-left: 4px;
+
+        }
+        &.dropdown-toggle {
+          width: 100%;
+          margin-left: 10px;
+          &:after {
+            display: none;
+          }
+
+          label {
+            width: 100%;
+            position: relative;
+            font-family: $regular-font;
+            font-size: 12px;
+            font-weight: $light-weightfont;
+            margin-bottom: 0;
+            padding-right: 15px;
+        
+
+            i {
+              position: absolute;
+              right: 0;
+              top: 0;
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    &.active {
+      max-width: 400px;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.page-content-wrapper {
+  background: #f8f9fa;
+  min-height: 100vh;
+  width: auto;
+  flex-grow: 1;
+
+  .page-start {
+    position: relative;
+    &::before {
+      content: "";
+      background: $white;
+      position: absolute;
+      display: block;
+      right: 0;
+      height: 50px;
+      left: 0;
+    }
+  }
+
+  .page-title {
+    padding: 20px 15px;
+
+    .page-title-text {
+      font-family: $regular-font;
+      font-size: 20px;
+      z-index: 100;
+    }
+    .page-title-icon {
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.035);
+      top: 68px;
+      width: 76px;
+      height: 70px;
+      margin-right: 15px;
+      z-index: 100;
+      img {
+        width: 36px;
+      }
+    }
+  }
+  .page-content {
+    .grey-border {
+      border-bottom: 3px solid rgb(248, 249, 250);
+    }
+    .section-title {
+      display: inline-block;
+      margin: 0px;
+      margin-top: 10px;
+      font-size: 20px;
+      font-family: $regular-font;
+      &::after {
+        content: "";
+        background: rgb(65, 166, 176);
+        height: 3px;
+        display: block;
+        margin-bottom: -3px;
+        margin-top: 10px;
+      }
+    }
+    .half-section {
+      padding-top: 25px;
+    }
+    .full-white-section {
+      background: $white;
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      border-radius: 5px;
+      &.page-title-header {
+        height: 36vh;
+        border-radius: 0;
+      }
+
+      &#useful-links {
+        .section-content {
+          .item {
+            width: auto;
+            padding-right: 6vw;
+          }
+        }
+      }
+
+      .section-content {
+        justify-content: space-between;
+
+        .item {
+          width: 100%;
+
+          .item-img {
+            object-fit: contain;
+            margin-right: 1vw;
+          }
+          .item-title {
+            margin: 0px;
+            font-family: $regular-font;
+            font-size: 14px;
+            font-weight: $light-weightfont;
+          }
+          .item-value {
+            margin: 0px;
+            font-family: $regular-font;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

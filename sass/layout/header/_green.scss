@@ -1,0 +1,51 @@
+#green-header {
+  height: 50px;
+  background: $green;
+  align-items: center;
+  .navbar {
+    height: 100%;
+    padding: 0;
+    #sidebarCollapse {
+      &:hover {
+        background: none;
+      }
+
+      padding: 0px;
+      border: 0px !important;
+    }
+  }
+}
+
+#headerlogo{
+  height: 30px;
+  width: 115px;
+}
+
+#header-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  a {
+    position: relative;
+    color: #fff;
+    padding-left: 15px;
+    margin-left: 15px;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: #fff;
+      width: 1px;
+      height: 10px;
+      margin: auto;
+    }
+    &:first-child{
+      &:before{
+        display: none;
+      }
+    }
+  }
+}

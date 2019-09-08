@@ -1,0 +1,38 @@
+#login-form-wrapper {
+    width: 68vw;
+    background: #40a7b0;
+  }
+
+#login-form {
+    width: 40%;
+    label {
+      display: none;
+    }
+    .form-control {
+      background: transparent;
+      color: $white;
+    }
+    ::-webkit-input-placeholder {
+      /* Edge */
+      color: $white;
+    }
+  
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $white;
+    }
+  
+    ::placeholder {
+      color: $white;
+    }
+    .form-check-label {
+      display: block;
+    }
+  }
+
+
+  #logout-text {
+    width: 40%;
+    text-align: center;
+  }
+  

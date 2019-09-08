@@ -1,0 +1,42 @@
+@import "bootstrap";
+@import "typography";
+@import "responsive";
+@import "fontawesome";
+@import "breadcrumbs";
+@import "layout/index";
+@import "basics/root";
+@import "basics/flexes";
+@import "layout/header/green";
+@import "layout/header/sidebar";
+@import "layout/content/body";
+@import "layout/content/tables";
+@import "layout/content/forms";
+@import "layout/footer";
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+* {
+  box-sizing: border-box;
+}
+
+
+
+.padding-right {
+  padding-right: 15px;
+}
+.padding-left {
+  padding-left: 15px;
+}
+.full-height {
+  height: 100vh;
+}
+
+
+
+.bg-light {
+  background: transparent !important;
+}
+
+
+
+
+
+
