@@ -26,7 +26,7 @@
     "bootstrap-sass": "^3.4.1",
     "bootstrap-select-country": "^4.1.0",
     "bootstrap-tagsinput": "^0.7.1",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "del": "^5.1.0",
     "fontawesome": "^5.6.3",
     "jquery": "^3.4.1"
